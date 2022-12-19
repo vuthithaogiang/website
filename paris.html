@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris</title>
+</head>
+
+<style>
+   *{
+    box-sizing:border-box;
+   }
+   header{
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: wheat;
+   }
+
+   body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:beige;
+   }
+   nav{
+
+    float: left;
+    width: 30%;
+    height: 300px;
+    background-color: #ccc;
+    padding: 20px;
+
+   }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: burlywood;
+        height: 300px;
+    }
+
+    section::after{
+        content:"";
+        display: table;
+        clear: both;
+
+
+    }
+
+    footer{
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color:bisque;
+    }
+
+    @media (max-width: 600px){
+        nav, article{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    p{
+        color: brown;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    abbr{
+        color:darkslateblue;
+        font-style: italic;
+    }
+
+    
+</style>
+<body>
+<h2 style= "color:darkolivegreen"> CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxed and a footer.
+    On smaller screen, the collumns will stack on of each other.
+</p>
+<p>Resize the browser window to see the responsive effect ( you will learn about in our in next Chapter -
+    <b><i> HTML Responsive </i></b> ).
+</p>
+
+<header> 
+    <h2>Cities: <b> Paris</b></h2>
+</header>
+<section>
+    <nav>
+        <img  src ="https://i.pinimg.com/564x/44/03/f0/4403f0a973a39baf1c5fca1165f85b68.jpg"
+        alt="parisimage" width="90%" height="250px">
+    </nav>
+    <article>
+        <h1> Paris</h1>
+        <p>
+            Paris là thành phố và cũng là thủ đô đông dân nhất nước Pháp, cũng là một tromg ba thành phố
+            phát triển kinh tế nhanh nhất cùng <i> London </i> và <b> New York</b> 
+            và là một trung tâm hành chính và nơi đặt trụ sở của vùng <abbr title="Vùng thủ đô của nước Pháp">France</abbr> 
+
+        </p>
+        <p>
+            Từ thế kỉ XVII, Paris đã một trong ba trung tâm lớn về tài chính, ngoại giao,
+            thương mại, thời trang, ammr thực, khoa học và nghệ thuật của thế giới nói chung.
+        </p>
+    </article>
+
+</section>
+
+<footer> This is footer</footer>
+    
+</body>
+</html>

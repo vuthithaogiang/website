@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo</title>
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:bisque;
+
+    }
+    header{
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color:burlywood;
+    }
+    nav{
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: #ccc;
+        padding: 20px;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        height: 300px;
+        background-color: burlywood;
+    }
+    
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    footer{
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    @media(max-width: 600px){
+        nav, article{
+            width: 100%;
+            height: auto;
+
+        }
+    }
+
+    p{
+        color: brown;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+</style>
+<body>
+    
+    <h2 style="color:darkolivegreen">CSS Layout Float </h2>
+    <p>In this example, we have created a header, two columns and a footer.
+        On a smaller screen, the columns will stack on top of each other.
+
+    </p>
+    <p>
+        Resize the browser window to see the responsive effect ( you will learn 
+        more about this in our next Chapter - <b><i> HTML Responsive</i></b> ).
+    </p>
+
+    <header> 
+        <h2>Cities: <b> Tokyo</b></h2>
+    </header>
+
+    <section>
+        <nav>
+            <img src="https://i.pinimg.com/474x/aa/df/ba/aadfba80c32936d84af2d27769dc73ab.jpg"
+            alt="tokyoimage" width="90%", height="260px">
+
+        </nav>
+        <article>
+            <h1>Tokyo</h1>
+            <p>
+                Tokyo là thủ đô và là một trong 47 tỉnh của Nhật Bản, nằm ở phía đông của đảo Honshu, vùng Kanto.
+                Đây là nơi đặt Hoàng cung và các cơ quan đầu não của Chính phủ Nhật Bản.
+
+            </p>
+            <p>Không chỉ là một đô thị riêng lẻ, Tokyo ngày nay cò là trung tâm của cùng thủ đô, hành chính Tokyo.
+                Trung tâm hành chính của Tokyo đặt ở khu Shinijuku, vùng đô thị Tokyo là vùng đông dân nhất 
+            thế giới với dân số từ 35 - 39 triệu người và là vùng đô thị có GDP cao nhất thể giới
+         vói GDP 1.479 tỷ đô la Mỹ theo sức mua tương đương và năm 2008. </p>
+
+        </article>
+    </section>
+    <footer>
+        <p>This is a footer.</p>
+    </footer>
+</body>
+</html>
