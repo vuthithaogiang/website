@@ -1,126 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout CSS Template</title>
-    <link rel="icon" type="image/x-icon" href="/images/faviconother.ico"> 
-
+    <title>Lab 02 HTML</title>
+    <link rel="stylesheet" href="/css/style-lab02.css">
 </head>
 
-
-<meta name="viewport">
-<meta comtent="width=device-width, initial-scale = 1"> 
-<style>
-    *{
-        box-sizing: border-box;
-    }
-
-    body{
-        font-family:Arial, Helvetica, sans-serif;
-        background-color:beige;
-    }
-
-    header{
-        background-color: #666;
-        padding: 30px;
-        text-align: center;
-        font-size: 35px;
-        color: white;
-    }
-
-    nav{
-        float: left;
-        width: 30%;
-        height: 300%;
-        background: #ccc;
-        padding: 20px;
-    }
-
-    nav ul{
-        padding:0;
-        list-style-type: none;
-
-    }
-    article{
-        float: left;
-        padding: 20px;
-        width: 70%;
-        background-color:burlywood;
-        height: 300px;
-    }
-
-    section::after{
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    footer{
-        background-color:#777;
-        padding: 10px;
-        text-align: center;
-        color:aliceblue;
-    }
-
-    @media (max-width: 600px){
-  
-        nav, article{
-            width: 100%;
-            height: auto;
-        }
-    }
-    p{
-        color: brown;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    li{
-        color:brown;
-        font-family:'Courier New', Courier, monospace;
-    }
-</style>
-
 <body>
-    <h2 style="color: darkolivegreen" > CSS Layout Float </h2>
-    <ul>
-    <li> In this example, we have created a header, two columns/ boxed and a footer. On smaller screens, the column
-        will stack on top of each other.
-    </li>
-    <li> Resize the browser window to see the ersponsive effect (you 
-        will learn more about thisin our next Chapter - <b> <i> HTML Responsive</i> </b> ).
-    </li>
-    </ul>
+    <div class="wrapper">
+        <header>
+            <h1>Yoko's kitchen</h1>
+            <nav>
+                <ul>
+                    <li ><a href="#" class="current">home</a></li>
+                    <li><a href="#">classes</a></li>
+                    <li><a href="#">cartering</a></li>
+                    <li><a href="#">about</a></li>
+                    <li<a href="#">contact </a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <article>
+                <figure>
+                    <img src="images/bok-choi.jpg" 
+                    alt="Bok Choi"/>
+                    <figcaption>Bok Choi</figcaption>
+                </figure>
+                <hgrounp>
+                    <h2>Japanese Vegetarian</h2>
+                    <h3>Five week course in London</h3>
+                </hgrounp>
+                <p>A five week introduction to traditional
+                    Japanese.
+                </p>
+            </article>
+            <figure>
+                <img src="/images/teriyaki.jpg" alt="Teriyaki sauce"/>
+                <figcaption>Teriyaki Sauce</figcaption>
+            </figure>
+            
+            <hgroup>
+                <h2>Sauces Masterclass</h2>
+                <h3>One day workshop</h3>
+            </hgroup>
+            <p>An intensive one-day course looking at how to create..</p>
+            </article>
+        </section>
+        <aside>
+            <section class="popular-recipes">
+                <h2>Popular Recipes</h2>
+                <a href="">Yakitori (grilled chicken) </a>
+                <a href="">Tsukume (minced chicken patties) </a>
+                <a href="">Okonomiyaki (savory pancakes) </a>
+                <a href="">Mizutaki (chicken stew) </a>
+            </section>
+            <section class="contact-details">
+                <h2>Contact</h2>
+                <p>Yoko's Kitchen <br/>
+                    27 Redchurd Street <br/>
+                    Shoreditch <br/>
+                    London E2 7DP
+                </p>
 
+            </section>
+        </aside>
+        <footer>
+            &copy; 2019 Yoko's Kitchen
+        </footer>
 
-<header>
-    <h2> Cities</h2>
-</header>
-
-<section>
-<nav>
-    <ul>
-       <li><a href="#">London</a></li>
-       <li><a href="paris.html">Paris</a></li>
-       <li><a href="tokyo.html">Tokyo</a></li>
-    </ul>
-</nav>
-
-<article>
-    <h1>London</h1>
-    <p>London is the capital city of england. It is the most 
-        populous city in the Kingdom, width a metropolian area its founding of over 
-        13 million inhabitions.
-    </p>
-    <p>Standing on the River Thames. Londn has been a major settlement for two
-        millennia, its history going back to its founding by the Romans,
-         who named it <b> Londinium</b>.
-    </p>
-</article>
-</section>
-<footer>
-    <p>This is footer.</p>
-</footer>
+    </div>
 
 </body>
+
 </html>

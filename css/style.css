@@ -1,0 +1,66 @@
+#top {
+    border: 1px solid black;
+    color: brown;
+}
+
+body {
+    
+    display: fixed;
+}
+
+* {
+    color: blueviolet;
+}
+
+.note {
+    color: darkslategray;
+
+}
+p{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 5px;
+    left: 80px;
+    margin: 30px;
+}
+
+p.one{
+
+    background-color:cornflowerblue;
+    opacity: 0.3;
+
+}
+p.two{
+
+    background-color:bisque;
+    opacity: 0.6;
+}
+
+p {
+    color: black;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+div{
+    width: 100px;
+    height: 100px;
+    display:flex;
+    background-color: aquamarine;
+    margin: 40px;
+    
+}
+
+p>a {
+    color: red;
+}
+
+ul>li>a {
+    font-size: 20px;
+    color: brown;
+}
+a:hover , a:visited{
+
+    color: blueviolet;
+}
